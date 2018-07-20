@@ -27,5 +27,18 @@ namespace Anupom_Roy_Lab05_Ex02
             elements = new T[stackSize]; // create stackSize elements
             top = -1; // stack initially empty
         }
+
+        
+        public void Push(T pushValue)
+        {
+            if (top == elements.Length - 1) // stack is full
+            {
+               
+            }
+
+            ++top; // increment top
+            elements[top] = pushValue; // place pushValue on stack
+        }
+
     }
 }
