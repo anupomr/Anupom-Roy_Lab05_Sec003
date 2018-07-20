@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anupom-Roy_Lab05_Ex01", "Anupom-Roy_Lab05_Ex01\Anupom-Roy_Lab05_Ex01.csproj", "{506E75FB-0975-47AA-86B3-4EBD739FDCF7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anupom-Roy_Lab05_Ex02", "Anupom-Roy_Lab05_Ex02\Anupom-Roy_Lab05_Ex02.csproj", "{86A2AA4F-2425-4001-9A03-1E8EDDCB54B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{506E75FB-0975-47AA-86B3-4EBD739FDCF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{506E75FB-0975-47AA-86B3-4EBD739FDCF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{506E75FB-0975-47AA-86B3-4EBD739FDCF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86A2AA4F-2425-4001-9A03-1E8EDDCB54B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86A2AA4F-2425-4001-9A03-1E8EDDCB54B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86A2AA4F-2425-4001-9A03-1E8EDDCB54B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86A2AA4F-2425-4001-9A03-1E8EDDCB54B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
