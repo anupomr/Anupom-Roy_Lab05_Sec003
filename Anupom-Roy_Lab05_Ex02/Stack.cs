@@ -28,17 +28,20 @@ namespace Anupom_Roy_Lab05_Ex02
             top = -1; // stack initially empty
         }
 
-        
+        // push element onto the stack; if unsuccessful,
+        // throw FullStackException
         public void Push(T pushValue)
         {
             if (top == elements.Length - 1) // stack is full
             {
-               
+                throw new FullStackException(
+                   $"Stack is full, cannot push {pushValue}");
             }
 
             ++top; // increment top
             elements[top] = pushValue; // place pushValue on stack
         }
+
 
     }
 }
