@@ -17,6 +17,8 @@ namespace Anupom_Roy_Lab05_Ex02._1
 
             Console.Write("Array intArray contains: ");
             DisplayArray(intArray); // pass an int array argument
+            Console.Write("Array intArray index 1 to 4: ");
+            DisplayArray(intArray,1,4); // pass an int array argument
             Console.Write("Array doubleArray contains: ");
             DisplayArray(doubleArray); // pass a double array argument
             Console.Write("Array charArray contains: ");
@@ -27,6 +29,24 @@ namespace Anupom_Roy_Lab05_Ex02._1
         private static void DisplayArray<T>(T[] inputArray)
         {
             foreach (var element in inputArray)
+            {
+                Console.Write($"{element} ");
+            }
+
+            Console.WriteLine();
+        }
+        // Overload generic method                           
+        private static void DisplayArray<T>(T[] inputArray, int lowIndex, int highIndex)
+        {
+            T[] newArray=new T[highIndex];           
+            int i = 0;            
+            while (lowIndex <= highIndex )
+            {              
+                newArray[i] = inputArray[lowIndex];
+                i++;
+                lowIndex++;
+            }
+            foreach (var element in newArray)
             {
                 Console.Write($"{element} ");
             }
