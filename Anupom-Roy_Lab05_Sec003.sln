@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anupom-Roy_Lab05_Ex01", "An
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anupom-Roy_Lab05_Ex02", "Anupom-Roy_Lab05_Ex02\Anupom-Roy_Lab05_Ex02.csproj", "{86A2AA4F-2425-4001-9A03-1E8EDDCB54B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anupom-Roy_Lab05_Ex02.1", "Anupom-Roy_Lab05_Ex02.1\Anupom-Roy_Lab05_Ex02.1.csproj", "{523F63A8-A84C-43C8-B27F-E7C262766668}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{86A2AA4F-2425-4001-9A03-1E8EDDCB54B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86A2AA4F-2425-4001-9A03-1E8EDDCB54B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86A2AA4F-2425-4001-9A03-1E8EDDCB54B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{523F63A8-A84C-43C8-B27F-E7C262766668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{523F63A8-A84C-43C8-B27F-E7C262766668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{523F63A8-A84C-43C8-B27F-E7C262766668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{523F63A8-A84C-43C8-B27F-E7C262766668}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
