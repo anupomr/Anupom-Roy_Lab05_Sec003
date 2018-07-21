@@ -38,6 +38,7 @@ namespace Anupom_Roy_Lab05_Ex02._1
         // Overload generic method                           
         private static void DisplayArray<T>(T[] inputArray, int lowIndex, int highIndex)
         {
+     
             T[] newArray=new T[highIndex];           
             int i = 0;            
             while (lowIndex <= highIndex )
