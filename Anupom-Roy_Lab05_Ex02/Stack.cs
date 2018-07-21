@@ -41,6 +41,18 @@ namespace Anupom_Roy_Lab05_Ex02
             ++top; // increment top
             elements[top] = pushValue; // place pushValue on stack
         }
+        // return the top element if not empty,
+        // else throw EmptyStackException
+        public T Pop()
+        {
+            if (top == -1) // stack is empty
+            {
+                throw new EmptyStackException("Stack is empty, cannot pop");
+            }
+
+            --top; // decrement top
+            return elements[top + 1]; // return top value
+        }
 
 
     }
