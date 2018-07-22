@@ -29,9 +29,9 @@ namespace Anupom_Roy_Lab05_Ex02._1
             }
             
             Console.Write("Array doubleArray contains: ");
-            DisplayArray(doubleArray); // pass a double array argument
+            DisplayArray(doubleArray,1,3); // pass a double array argument
             Console.Write("Array charArray contains: ");
-            DisplayArray(charArray); // pass a char array argument
+            DisplayArray(charArray,1,2); // pass a char array argument
         }
 
         // output array of all types                           
