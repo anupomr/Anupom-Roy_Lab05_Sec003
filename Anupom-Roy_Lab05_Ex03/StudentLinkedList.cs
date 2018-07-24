@@ -22,7 +22,7 @@ namespace Anupom_Roy_Lab05_Ex03
             //RemoveLinkedListItem(linkedStudents, studentAnu);
             Console.WriteLine("After Remove");
            PrintLinkedList(linkedStudents);
-            SearchLinkedListItem(linkedStudents, studentAnu);
+            SearchLinkedListItem(linkedStudents, stuChan);
         }
         public static void AddLinkedListItem(LinkedList<Student> name, Student studentObj)
         {
@@ -48,10 +48,18 @@ namespace Anupom_Roy_Lab05_Ex03
         public static void SearchLinkedListItem(LinkedList<Student> name, Student studentObj)
         {
             LinkedListNode<Student> currentNode = name.Find(studentObj);
-            if (currentNode.Value != null)
-            { Console.WriteLine("Data found !!!"); }
-            else
-            { Console.WriteLine("Data  not found !!!"); }
+            try
+            {
+                if (currentNode.Value != null)
+                { Console.WriteLine("Data found !!!"); }
+                else
+                { Console.WriteLine("Data  not found !!!"); }
+            }
+            catch (Exception e)
+            {
+                Console.Error.WriteLine($"\n Message : {e.Message}");
+            }
+            
         }
     }
 }
