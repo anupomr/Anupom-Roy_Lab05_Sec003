@@ -23,6 +23,18 @@ namespace Anupom_Roy_Lab05_Ex03
             Console.WriteLine("After Remove");
            PrintLinkedList(linkedStudents);
             SearchLinkedListItem(linkedStudents, stuChan);
+           
+            Console.WriteLine("After Remove All");
+            try
+            {
+                RemoveAllLinkedListItems(linkedStudents);
+                PrintLinkedList(linkedStudents);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+           
         }
         public static void AddLinkedListItem(LinkedList<Student> name, Student studentObj)
         {
@@ -36,7 +48,12 @@ namespace Anupom_Roy_Lab05_Ex03
         }
         public static void PrintLinkedList(LinkedList<Student> name)
         {
+            if (name.First == null)
+            {
+                throw new StudentLinkedListException();
+            }
             LinkedListNode<Student> currentNode = name.First;
+            
             while (currentNode != null)
             {
                 Console.WriteLine(currentNode.Value); 
@@ -60,6 +77,11 @@ namespace Anupom_Roy_Lab05_Ex03
                 Console.Error.WriteLine($"\n Message : {e.Message}");
             }
             
+        }
+        public static void RemoveAllLinkedListItems(LinkedList<Student> name)
+        {
+            
+            RemoveAllLinkedListItems(name);
         }
     }
 }
