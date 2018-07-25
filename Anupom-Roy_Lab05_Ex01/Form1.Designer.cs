@@ -34,11 +34,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtDoubleArray = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtResult = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.rbIntegerArray = new System.Windows.Forms.RadioButton();
+            this.rbDoubleArray = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // txtIntArray
@@ -89,27 +92,28 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(32, 205);
+            this.label4.Location = new System.Drawing.Point(29, 232);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 13);
             this.label4.TabIndex = 5;
             this.label4.Text = "Search";
             // 
-            // textBox1
+            // txtSearch
             // 
-            this.textBox1.Location = new System.Drawing.Point(128, 205);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(93, 20);
-            this.textBox1.TabIndex = 6;
+            this.txtSearch.Location = new System.Drawing.Point(128, 229);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(93, 20);
+            this.txtSearch.TabIndex = 6;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(261, 205);
+            this.button1.Location = new System.Drawing.Point(261, 229);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(85, 23);
             this.button1.TabIndex = 7;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -131,24 +135,59 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // textBox2
+            // txtResult
             // 
-            this.textBox2.Location = new System.Drawing.Point(128, 170);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(218, 20);
-            this.textBox2.TabIndex = 10;
-            this.textBox2.Text = "Result";
+            this.txtResult.Location = new System.Drawing.Point(128, 170);
+            this.txtResult.Name = "txtResult";
+            this.txtResult.Size = new System.Drawing.Size(218, 20);
+            this.txtResult.TabIndex = 10;
+            this.txtResult.Text = "Result";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(29, 201);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(86, 13);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Search option";
+            // 
+            // rbIntegerArray
+            // 
+            this.rbIntegerArray.AutoSize = true;
+            this.rbIntegerArray.Checked = true;
+            this.rbIntegerArray.Location = new System.Drawing.Point(128, 201);
+            this.rbIntegerArray.Name = "rbIntegerArray";
+            this.rbIntegerArray.Size = new System.Drawing.Size(85, 17);
+            this.rbIntegerArray.TabIndex = 12;
+            this.rbIntegerArray.TabStop = true;
+            this.rbIntegerArray.Text = "Integer Array";
+            this.rbIntegerArray.UseVisualStyleBackColor = true;
+            // 
+            // rbDoubleArray
+            // 
+            this.rbDoubleArray.AutoSize = true;
+            this.rbDoubleArray.Location = new System.Drawing.Point(240, 201);
+            this.rbDoubleArray.Name = "rbDoubleArray";
+            this.rbDoubleArray.Size = new System.Drawing.Size(86, 17);
+            this.rbDoubleArray.TabIndex = 13;
+            this.rbDoubleArray.Text = "Double Array";
+            this.rbDoubleArray.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 261);
-            this.Controls.Add(this.textBox2);
+            this.ClientSize = new System.Drawing.Size(384, 287);
+            this.Controls.Add(this.rbDoubleArray);
+            this.Controls.Add(this.rbIntegerArray);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtResult);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtDoubleArray);
             this.Controls.Add(this.label3);
@@ -170,11 +209,14 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtDoubleArray;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtResult;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.RadioButton rbIntegerArray;
+        private System.Windows.Forms.RadioButton rbDoubleArray;
     }
 }
 
