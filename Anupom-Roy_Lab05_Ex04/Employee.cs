@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Anupom_Roy_Lab05_Ex04
 {
-    class Employee
+    public class Employee
     {
         public string Name { get; set; }
         public double salary;
@@ -29,6 +29,6 @@ namespace Anupom_Roy_Lab05_Ex04
             Name = name;
             Salary = empSalary;
         }
-        public override string ToString() => $"Employee: {Name}  Salary{Salary}";
+        public override string ToString() => $"Employee: {Name}  Salary: {Salary:C}";
     }
 }
