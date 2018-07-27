@@ -29,6 +29,6 @@ namespace Anupom_Roy_Lab05_Ex04
             Name = name;
             Salary = empSalary;
         }
-        public override string ToString() => $"Employee: {Name}  Salary: {Salary:C}";
+        public override string ToString() => $"Employee: {Name,-14}  Salary: {Salary,-18:C}";
     }
 }
