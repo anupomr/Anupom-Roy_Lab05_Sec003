@@ -67,8 +67,16 @@ namespace Anupom_Roy_Lab05_Ex01
            
             if (rbIntegerArray.Checked == true)
             {
-                int searchItem = Convert.ToInt32(txtSearch.Text);
-
+                int searchItem=0;
+                try
+                {
+                    validation();
+                     searchItem = Convert.ToInt32(txtSearch.Text);
+                }
+                catch (Exception se)
+                {
+                    MessageBox.Show(se.Message, "Input Alert");
+                }
                 List<int> intList = new List<int>();
                 foreach (var item in intArray)
                 {
@@ -87,7 +95,15 @@ namespace Anupom_Roy_Lab05_Ex01
             if (rbDoubleArray.Checked == true)
             {
                 Double searchItem = Convert.ToDouble(txtSearch.Text);
-
+                try
+                {
+                    validation();
+                    searchItem = Convert.ToInt32(txtSearch.Text);
+                }
+                catch (Exception se)
+                {
+                    MessageBox.Show(se.Message, "Input Alert");
+                }
                 List<Double> doubleList = new List<Double>();
                 foreach (var item in doubleArray)
                 {
@@ -103,7 +119,42 @@ namespace Anupom_Roy_Lab05_Ex01
                     txtResult.Text = $"Number  found !! at {r} index of the Array";
                 }
             }
+            //
 
+        }
+        public void validation() {
+            //txtSearch.Click();
+            string strSearch = txtSearch.Text;
+           
+            if (strSearch=="" && rbIntegerArray.Checked)
+            {
+                throw new SearchException();
+            }
+            if (Convert.ToInt32(strSearch)<0 && rbIntegerArray.Checked)
+            {
+                throw new SearchException("Please Enter a Integer Number");
+            }
+            if (strSearch == "" && rbDoubleArray.Checked)
+            {
+                throw new SearchException();
+            }
+            if (Convert.ToDouble(strSearch) > 0 && rbDoubleArray.Checked)
+            {
+                throw new SearchException("Please Enter a decemal Number");
+            }
+        }
+
+        private void txtSearch_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (rbIntegerArray.Checked) {
+                if (!char.IsDigit(ch) && ch != 8) e.Handled = true;
+            }
+           
+            // if (!char.IsNumber(ch) && ch != 8) e.Handled = true;
+            if(rbDoubleArray.Checked)
+            {if (char.IsLetter(ch) && ch != 110) e.Handled = true; }
+            
         }
     }
 }
